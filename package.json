@@ -1,0 +1,23 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@wdio/cli": "^8.15.10",
+        "@wdio/local-runner": "^8.15.10",
+        "@wdio/mocha-framework": "^8.15.10",
+        "@wdio/spec-reporter": "^8.15.10"
+    },
+    "scripts": {
+        "run_all" :"wdio run wdio.conf.js", 
+        "test1": "wdio run wdio.conf.js --spec test/specs/1.valid_login.spec.js", 
+        "test2": "wdio run wdio.conf.js --spec test/specs/2.login_invalid_pwd.spec.js", 
+        "test3": "wdio run wdio.conf.js --spec test/specs/3.login_invalid_login.spec.js", 
+        "test4": "wdio run wdio.conf.js --spec test/specs/4.logout.spec.js", 
+        "test5": "wdio run wdio.conf.js --spec test/specs/5.cart_save.spec.js", 
+        "test6": "wdio run wdio.conf.js --spec test/specs/6.sorting.spec.js", 
+        "test7": "wdio run wdio.conf.js --spec test/specs/7.footer.spec.js",
+        "test8": "wdio run wdio.conf.js --spec test/specs/8.valid_checkout.spec.js",
+        "test9": "wdio run wdio.conf.js --spec test/specs/9.checkout_wth_products.spec.js"  
+    }   
+}
